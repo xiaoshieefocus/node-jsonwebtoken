@@ -1,13 +1,13 @@
 var timespan = require('./lib/timespan');
 var PS_SUPPORTED = require('./lib/psSupported');
 var jws = require('jws');
-var includes = require('lodash.includes');
-var isBoolean = require('lodash.isboolean');
-var isInteger = require('lodash.isinteger');
-var isNumber = require('lodash.isnumber');
-var isPlainObject = require('lodash.isplainobject');
-var isString = require('lodash.isstring');
-var once = require('lodash.once');
+var { includes } = require('lodash');
+var { isBoolean } = require('lodash');
+var { isInteger } = require('lodash');
+var { isNumber } = require('lodash');
+var { isPlainObject } = require('lodash');
+var { isString } = require('lodash');
+var { once } = require('lodash');
 
 var SUPPORTED_ALGS = ['RS256', 'RS384', 'RS512', 'ES256', 'ES384', 'ES512', 'HS256', 'HS384', 'HS512', 'none'];
 if (PS_SUPPORTED) {
